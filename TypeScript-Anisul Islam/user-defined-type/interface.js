@@ -7,6 +7,6 @@ var printUserInfo = function (user) {
     console.log("userId = ".concat(user.id, ", name = ").concat(user.name, ", age = ").concat(user.age));
 };
 users.forEach(function (user) { return printUserInfo(user); });
-// ## 8. interface vs type
+// NOTE: interface vs type
 // both are nearly similar in most cases.
 // However, Adding new filed after creation is possible for an interface but not possible for a type.

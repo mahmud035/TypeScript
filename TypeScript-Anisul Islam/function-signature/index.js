@@ -1,3 +1,4 @@
+// function-signature
 var userInfo1;
 var userInfo2;
 var userInfo3;

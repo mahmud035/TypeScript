@@ -18,7 +18,7 @@ const printUserInfo = (user: User) => {
 
 users.forEach((user) => printUserInfo(user));
 
-// ## 8. interface vs type
+// NOTE: interface vs type
 
 // both are nearly similar in most cases.
 // However, Adding new filed after creation is possible for an interface but not possible for a type.

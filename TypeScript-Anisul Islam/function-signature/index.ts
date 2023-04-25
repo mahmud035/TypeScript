@@ -1,3 +1,4 @@
+// function-signature
 let userInfo1: () => void;
 let userInfo2: (name: string) => void;
 let userInfo3: (name: string, age: number) => string;
