@@ -16,4 +16,4 @@ userInfo3 = (name: string, age: number) => {
 
 userInfo1();
 userInfo2('Anisul Islam');
-userInfo3('Anisul Islam', 32);
+console.log(userInfo3('Anisul Islam', 32));

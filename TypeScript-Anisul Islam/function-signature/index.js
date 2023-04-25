@@ -12,4 +12,4 @@ userInfo3 = function (name, age) {
 };
 userInfo1();
 userInfo2('Anisul Islam');
-userInfo3('Anisul Islam', 32);
+console.log(userInfo3('Anisul Islam', 32));
