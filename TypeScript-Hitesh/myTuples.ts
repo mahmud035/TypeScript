@@ -2,17 +2,18 @@
 // const user2: (string | number)[] = ['pavel', 1]; // OK
 
 // Tuples - Array Order is IMPORTANT
-// Use Case: 1
+
+// Example: 1
 let tUser: [string, number, boolean];
 
 tUser = ['pavel', 1, true]; // OK
 // user = [1, 'pavel', true]; // Error Here
 // user = [true, 1, 'pavel']; // Error Here
 
-// Use Case: 2
+// Example: 2
 let rgb: [number, number, number] = [255, 255, 255];
 
-// Use Case: 3
+// Example: 3
 type User = [number, string];
 
 const newUser: User = [112, 'pavel']; // OK

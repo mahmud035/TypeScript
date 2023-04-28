@@ -24,7 +24,7 @@ function createVideo(): [] {
 
 */
 
-// Type Aliases
+//* Type Aliases
 
 /*
 
