@@ -17,3 +17,29 @@ var loginUser = function (name, email, isPaid) {
     // console.log(`${name} ${email} ${isPaid}`);
 };
 console.log(loginUser('pavel', 'pavel@gmail.com'));
+// union type
+function getValue(myValue) {
+    if (myValue > 5) {
+        return true;
+    }
+    return '200 OK';
+}
+// Arrow function return type Syntax
+var getHello = function (s) {
+    return '';
+};
+var heros = ['thor', 'spiderman', 'ironman'];
+var numbers = [1, 2, 3];
+heros.map(function (hero) {
+    return "hero is ".concat(hero);
+});
+numbers.map(function (number) {
+    return "numbers is ".concat(number);
+});
+function consoleError(errorMessage) {
+    console.log(errorMessage);
+    // return 1; // Error Here
+}
+function handleError(errorMessage) {
+    throw new Error(errorMessage);
+}
