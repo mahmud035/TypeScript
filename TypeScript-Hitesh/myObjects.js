@@ -23,12 +23,10 @@ function createVideo(): [] {
 }
 
 */
-function createUser(user) {
-    return { name: 'John', email: '', isActive: false };
-}
-createUser({ name: 'John', email: '', isActive: false });
-function printCoord(pt) {
-    console.log("The coordinate's x value is " + pt.x);
-    console.log("The coordinate's y value is " + pt.y);
-}
-printCoord({ x: 100, y: 100 });
+var myUser = {
+    _id: '12345',
+    name: 'John',
+    email: 'john@.com',
+    isActive: false,
+};
+myUser.email = 'john@example.com';

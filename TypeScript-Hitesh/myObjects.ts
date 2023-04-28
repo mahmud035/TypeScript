@@ -25,6 +25,9 @@ function createVideo(): [] {
 */
 
 // Type Aliases
+
+/*
+
 type User = {
   name: string;
   email: string;
@@ -48,3 +51,37 @@ function printCoord(pt: Point) {
 }
 
 printCoord({ x: 100, y: 100 });
+
+*/
+
+type User = {
+  readonly _id: string;
+  name: string;
+  email: string;
+  isActive: boolean;
+  creditCardDetails?: number; // Optional property
+};
+
+let myUser: User = {
+  _id: '12345',
+  name: 'John',
+  email: 'john@.com',
+  isActive: false,
+};
+
+myUser.email = 'john@example.com';
+// myUser._id = '90000' // Error Here - Because it's readOnly
+
+// Combine Multiple types and create a Single type
+type cardNumber = {
+  cardNumber: string;
+};
+
+type cardDate = {
+  cardDate: string;
+};
+
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
