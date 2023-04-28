@@ -7,3 +7,10 @@ var userId = 334;
 userId.toFixed();
 // boolean
 var isLoggedIn = false;
+// any
+var hero;
+function getHero() {
+    return 'thor';
+    // return true;  // Error Here
+}
+hero = getHero();
