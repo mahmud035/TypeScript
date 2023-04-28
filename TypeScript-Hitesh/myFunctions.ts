@@ -1,4 +1,5 @@
 function addTwo(num: number): number {
+  // return 'Hello'; // Error Here
   return num + 2;
 }
 
@@ -28,7 +29,7 @@ const loginUser = (
 
 console.log(loginUser('pavel', 'pavel@gmail.com'));
 
-// union type
+// return union type
 function getValue(myValue: number): boolean | string {
   if (myValue > 5) {
     return true;
@@ -45,12 +46,12 @@ const getHello = (s: string): string => {
 const heros = ['thor', 'spiderman', 'ironman'];
 const numbers = [1, 2, 3];
 
-heros.map((hero) => {
+heros.map((hero): string => {
   return `hero is ${hero}`;
 });
 
-numbers.map((number) => {
-  return `numbers is ${number}`;
+numbers.map((number): number => {
+  return number;
 });
 
 function consoleError(errorMessage: string): void {

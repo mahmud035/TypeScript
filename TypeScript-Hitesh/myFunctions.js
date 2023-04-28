@@ -1,4 +1,5 @@
 function addTwo(num) {
+    // return 'Hello'; // Error Here
     return num + 2;
 }
 console.log(addTwo(5));
@@ -17,7 +18,7 @@ var loginUser = function (name, email, isPaid) {
     // console.log(`${name} ${email} ${isPaid}`);
 };
 console.log(loginUser('pavel', 'pavel@gmail.com'));
-// union type
+// return union type
 function getValue(myValue) {
     if (myValue > 5) {
         return true;
@@ -34,7 +35,7 @@ heros.map(function (hero) {
     return "hero is ".concat(hero);
 });
 numbers.map(function (number) {
-    return "numbers is ".concat(number);
+    return number;
 });
 function consoleError(errorMessage) {
     console.log(errorMessage);
