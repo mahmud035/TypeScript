@@ -1,7 +1,13 @@
 let greetings: string = 'Hello Pavel';
 
-let myNum = 10;
-
 console.log(greetings);
+
+// number
+let userId = 334;
+
+userId.toFixed();
+
+// boolean
+let isLoggedIn: boolean = false;
 
 export {};
