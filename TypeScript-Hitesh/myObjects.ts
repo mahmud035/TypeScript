@@ -1,3 +1,5 @@
+/* 
+
 const User = {
   name: 'John',
   email: 'john@gmail.com',
@@ -19,3 +21,30 @@ function createCourse(): {} {
 function createVideo(): [] {
   return [];
 }
+
+*/
+
+// Type Aliases
+type User = {
+  name: string;
+  email: string;
+  isActive: boolean;
+};
+
+function createUser(user: User): User {
+  return { name: 'John', email: '', isActive: false };
+}
+
+createUser({ name: 'John', email: '', isActive: false });
+
+type Point = {
+  x: number;
+  y: number;
+};
+
+function printCoord(pt: Point) {
+  console.log("The coordinate's x value is " + pt.x);
+  console.log("The coordinate's y value is " + pt.y);
+}
+
+printCoord({ x: 100, y: 100 });
