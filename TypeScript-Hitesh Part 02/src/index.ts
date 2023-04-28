@@ -1,7 +1,7 @@
 class User {
   email: string;
   name: string;
-  city: string = '';
+  private city: string = '';
 
   constructor(email: string, name: string) {
     this.email = email;
@@ -10,5 +10,22 @@ class User {
 }
 
 const pavel = new User('pavel@.com', 'pavel');
+// pavel.city
 
 console.log(pavel);
+
+//* Same work with Different Syntax:
+class User2 {
+  readonly city: string = '';
+
+  constructor(
+    public email: string,
+    public name: string,
+    private userId: number
+  ) {}
+}
+
+const pavel2 = new User2('pavel@.com', 'pavel', 112);
+// pavel2.userId
+
+console.log(pavel2);
