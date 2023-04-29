@@ -26,3 +26,15 @@ interface Bootle {
 }
 
 // identifyFour<Bootle>({})
+
+function getSearchProducts<T>(products: T[]): T {
+  // do some database operations
+  const myIndex = 3;
+  return products[3];
+}
+
+const getMoreSearchProducts = <T>(products: T[]): T => {
+  // do some database operations
+  const myIndex = 3;
+  return products[3];
+};

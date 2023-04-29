@@ -16,3 +16,13 @@ function identifyFour(value) {
     return value;
 }
 // identifyFour<Bootle>({})
+function getSearchProducts(products) {
+    // do some database operations
+    const myIndex = 3;
+    return products[3];
+}
+const getMoreSearchProducts = (products) => {
+    // do some database operations
+    const myIndex = 3;
+    return products[3];
+};
