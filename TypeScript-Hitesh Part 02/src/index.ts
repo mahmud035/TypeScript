@@ -23,6 +23,10 @@ class User2 {
     public name: string,
     private userId: number
   ) {}
+
+  get getAppleEmail(): string {
+    return `apple ${this.email}`;
+  }
 }
 
 const pavel2 = new User2('pavel@.com', 'pavel', 112);

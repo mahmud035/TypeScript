@@ -17,6 +17,9 @@ class User2 {
         this.userId = userId;
         this.city = '';
     }
+    get getAppleEmail() {
+        return `apple ${this.email}`;
+    }
 }
 const pavel2 = new User2('pavel@.com', 'pavel', 112);
 // pavel2.userId
