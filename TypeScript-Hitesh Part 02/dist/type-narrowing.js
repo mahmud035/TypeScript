@@ -1,4 +1,5 @@
 "use strict";
+// Type Narrowing
 function detectType(value) {
     if (typeof value === 'string') {
         return value.toLowerCase();
@@ -29,5 +30,27 @@ function printAll(strs) {
 function isAdminAccount(account) {
     if ('isAdmin' in account) {
         return account.isAdmin;
+    }
+}
+// Instanceof and Type Predicates
+function logValue(x) {
+    if (x instanceof Date) {
+        console.log(x.toUTCString());
+    }
+    else {
+        console.log(x.toUpperCase());
+    }
+}
+function isFish(pet) {
+    return pet.swim !== undefined;
+}
+function getFood(pet) {
+    if (isFish(pet)) {
+        pet;
+        return 'fish food';
+    }
+    else {
+        pet;
+        return 'bird food';
     }
 }
