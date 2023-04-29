@@ -54,3 +54,9 @@ function getFood(pet) {
         return 'bird food';
     }
 }
+function getTrueShape(shape) {
+    if (shape.kind === 'circle') {
+        return Math.PI * shape.radius ** 2;
+    }
+    return shape.side * shape.side;
+}
