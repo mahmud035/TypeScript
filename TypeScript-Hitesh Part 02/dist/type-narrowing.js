@@ -25,3 +25,9 @@ function printAll(strs) {
         }
     }
 }
+// The in operator narrowing
+function isAdminAccount(account) {
+    if ('isAdmin' in account) {
+        return account.isAdmin;
+    }
+}
