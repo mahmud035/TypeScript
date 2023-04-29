@@ -1,4 +1,4 @@
-abstract class TakePhoto {
+abstract class TakePhoto2 {
   constructor(public cameraMode: string, public filter: string) {}
 
   abstract getSepia(): void;
@@ -8,7 +8,7 @@ abstract class TakePhoto {
   }
 }
 
-class Instagram2 extends TakePhoto {
+class Instagram2 extends TakePhoto2 {
   constructor(
     public cameraMode: string,
     public filter: string,
